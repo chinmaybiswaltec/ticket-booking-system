@@ -44,4 +44,10 @@ List<ShowEntity> findShowsByMovieCityAndTime(
      @Param("cityName") String cityName,
      @Param("showDate") LocalDate showDate,
      @Param("showStartTime") LocalTime showStartTime);
+	
+	 List<ShowEntity> findByShowDateAndShowStartTime(LocalDate showDate, LocalTime showStartTime);
+
+	 List<ShowEntity> findByTheatreId(Long theatreId);
+
+	   
 }
